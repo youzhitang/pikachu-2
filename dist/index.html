@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      #html {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60vh;
+      }
+
+      #demo1 {
+        position: fixed;
+        width: 100%;
+        height: 40vh;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+      }
+
+      #demo1::-webkit-scrollbar {
+        display: none;
+      }
+
+      #demo2 {
+        display: none;
+      }
+
+      #buttons {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+      #buttons > button {
+        margin-bottom: 10px;
+        padding: 4px 8px;
+      }</style>
+  </head>
+  <body>
+    <div id="demo1"></div>
+    <style id="demo2"></style>
+    <div id="buttons">
+      <button id="btnPause">暂停</button>
+      <button id="btnPlay">播放</button>
+      <button id="btnSlow">慢速</button>
+      <button id="btnNormal">中速</button>
+      <button id="btnFast">快速</button>
+    </div>
+    <div id="html">
+      <div class="skin">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+
+        <div class="nose"></div>
+        <div class="mouth">
+          <div class="up">
+            <div class="lip left"></div>
+            <div class="lip right"></div>
+          </div>
+          <div class="down">
+            <div class="round2">
+              <div class="round3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="face left"></div>
+
+        <div class="face right"></div>
+      </div>
+    </div>
+    <script src="main.32768c1a.js"></script>
+  </body>
+</html>
